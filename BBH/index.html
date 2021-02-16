@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bistro: Hulk & Bulk</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container back">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="title">BISTRO HULK & BULK</a>
+      <a href="index3.html" class="menu">Boka bord</a>
+      <a href="index3.html" class="menu">Meny</a>
+      <a href="index3.html" class="menu">Hitta hit</a>
+      <a href="index3.html" class="menu">Recept</a>
+      <a href="index2.html" class="menu">Om oss</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="bildspel">
+      <img src="img1.jpeg" alt="error" id="bild">
+      <div class="centered">
+        <p class="text1"> VÅRA <br> KLIMATMÅL </p>
+        <input type="button" class="button" value="Ta reda på mer ➝" onclick="onclick=window.location.href='index2.html';">
+        <script type="text/javascript" src="script.js"></script>
+        <input type="image" src="arrowR.png" alt="error" class="arrow r" onclick="right()">
+        <input type="image" src="arrowL.png" alt="error" class="arrow l" onclick="left()">
+        <script type="text/javascript" src="script.js"></script>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <a href="#toppen" class="link" title="Toppen">Toppen av sidan ↑</a>
+  </footer>
+
+  <a href='https://pngtree.com/so/arrow-clipart'>arrow clipart png from pngtree.com</a>
+  <a href='https://pngtree.com/so/arrow-clipart'>arrow clipart png from pngtree.com</a>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
