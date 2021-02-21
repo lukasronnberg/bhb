@@ -8,11 +8,11 @@ function left() { //för pil åt vänster
   }
 
   if (count == 1) { //ändrar bilden till den rätta utifrån variabeln
-    document.getElementById('bild').src = "img1.jpeg";
+    document.getElementById('bild').src = "img1.jpg";
   } else if (count == 2) {
-    document.getElementById('bild').src = "img2.jpeg";
+    document.getElementById('bild').src = "img2.jpg";
   } else {
-    document.getElementById('bild').src = "img3.jpeg";
+    document.getElementById('bild').src = "img3.jpg";
   }
 
 
@@ -29,11 +29,11 @@ function right() { //för pil åt höger
   }
 
   if (count == 1) {
-    document.getElementById('bild').src = "img1.jpeg";
+    document.getElementById('bild').src = "img1.jpg";
   } else if (count == 2) {
-    document.getElementById('bild').src = "img2.jpeg";
+    document.getElementById('bild').src = "img2.jpg";
   } else {
-    document.getElementById('bild').src = "img3.jpeg";
+    document.getElementById('bild').src = "img3.jpg";
   }
 
 
