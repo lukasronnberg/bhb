@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Bistro: Hulk & Bulk</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="grid.css">
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <script type="text/javascript" src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <div class="container back">
+  <!--Responsiv Navigationsmeny-->
+  <div class="container" id="toppen">
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="title">BISTRO HULK & BULK</a>
+      <a href="index.html" class="title">BISTRO HULK & BULK </a>
       <a href="index3.html" class="menu">Boka bord</a>
       <a href="index3.html" class="menu">Meny</a>
       <a href="index3.html" class="menu">Hitta hit</a>
@@ -28,32 +29,25 @@
       </a>
     </div>
 
+    <!--Sidans innehåll, bild och text-->
     <div class="content" style="background-color:white;">
       <h2 class="underRubrik">Klimatmål</h2>
       <p class="brodtext">På Bistro Hulk & Bulk arbetar för att minska vårat klimatavtryck på flera olika sätt. Allt kött som serveras är ekologsikt. Vi är även en stor bidragsgivare till olika miljöorganisationer som arbetar för ett
         hållbart klimat. Målet är att bli
         helt klimatneutrala år 2025. All vår mat serveras på återvunna bambu tallrikar och glasen är gjorde att upphittade burkar. På Bistro Bulk kan du äta med gott samvete. </p>
-      <img src="climate.jpg" alt="error" class="center">
+      <img src="img/climate.jpg" alt="error" class="contentImg">
       <h3 class="underRubrik"> Maten </h3>
       <p class="brodtext">Huvudattraktionen är självfallet vår goda mat, våra legendariska köttbullar är kända världen över för sin fantastiska smak och arom. Upplev skillnaden hos oss, du kommer inte bli besviken.<br> Våra köttbullar är även
         kliniskt bevisade ha en enromt positiv effekt på muskelbyggnad. Endast efter en veckas användning har man sett enorma resultat. </p>
-      <img src="body.jpg" alt="error" class="center">
+      <img src="img/body.jpg" alt="error" class="contentImg">
     </div>
   </div>
 
+  <!--Länk för att ta användaren tillbaka till sidan-->
   <footer>
     <a href="#toppen" class="link" title="Toppen">Toppen av sidan ↑</a>
   </footer>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+
 </body>
 
 </html>

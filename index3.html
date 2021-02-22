@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Bistro: Hulk & Bulk</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="grid.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <script type="text/javascript" src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <div class="container back">
+  <!--Responsiv Navigationsmeny-->
+  <div class="container" id="toppen">
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="title">BISTRO HULK & BULK</a>
+      <a href="index.html" class="title">BISTRO HULK & BULK </a>
       <a href="index3.html" class="menu">Boka bord</a>
       <a href="index3.html" class="menu">Meny</a>
       <a href="index3.html" class="menu">Hitta hit</a>
@@ -27,26 +29,17 @@
       </a>
     </div>
 
-
+    <!--Sidans innehåll, text-->
     <div class=content2>
       <p>Sidan är under konstruktion och går för tillfället inte att hämta. Vänligen försök igen lite senare.</p>
     </div>
   </div>
 
+  <!--Länk för att ta användaren tillbaka till sidan-->
   <footer>
     <a href="#toppen" class="link" title="Toppen">Toppen av sidan ↑</a>
   </footer>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
 </body>
 
 </html>

@@ -8,15 +8,15 @@ function left() { //för pil åt vänster
   }
 
   if (count == 1) { //ändrar bilden till den rätta utifrån variabeln
-    document.getElementById('bild').src = "img1.jpg";
+    document.getElementById('bildSpelBild').src = "img/img1.jpg";
   } else if (count == 2) {
-    document.getElementById('bild').src = "img2.jpg";
+    document.getElementById('bildSpelBild').src = "img/img2.jpg";
   } else {
-    document.getElementById('bild').src = "img3.jpg";
+    document.getElementById('bildSpelBild').src = "img/img3.jpg";
   }
 
 
-  console.log(count);
+  console.log(count); //för testning
 
 }
 
@@ -29,18 +29,19 @@ function right() { //för pil åt höger
   }
 
   if (count == 1) {
-    document.getElementById('bild').src = "img1.jpg";
+    document.getElementById('bildSpelBild').src = "img/img1.jpg";
   } else if (count == 2) {
-    document.getElementById('bild').src = "img2.jpg";
+    document.getElementById('bildSpelBild').src = "img/img2.jpg";
   } else {
-    document.getElementById('bild').src = "img3.jpg";
+    document.getElementById('bildSpelBild').src = "img/img3.jpg";
   }
 
 
-  console.log(count);
+  console.log(count); //för testning
 
 }
 
+//för den responsiva navigationsmenyn
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Bistro: Hulk & Bulk</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="grid.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <script type="text/javascript" src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -14,11 +14,10 @@
 </head>
 
 <body>
-
-  <div class="container back" id="toppen">
+  <!--Responsiv Navigationsmeny-->
+  <div class="container" id="toppen">
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="title">BISTRO HULK & BULK </a>
-      <img src="logo.png" alt="error" style="width: 3%; height: 3%; float:left;">
       <a href="index3.html" class="menu">Boka bord</a>
       <a href="index3.html" class="menu">Meny</a>
       <a href="index3.html" class="menu">Hitta hit</a>
@@ -29,14 +28,15 @@
       </a>
     </div>
 
-    <div class="bildspel">
-      <img src="img1.jpg" alt="error" id="bild" class="bild">
-      <div class="centered">
-        <p class="text1"> VÅRA <br> KLIMATMÅL </p>
-        <input type="button" class="button" value="Ta reda på mer ➝" onclick="onclick=window.location.href='index2.html';">
+    <!--Bildspel styrt av användaren-->
+    <div class="bildSpel">
+      <img src="img/img1.jpg" alt="bild på mat" id="bildSpelBild" class="bildSpelBild">
+      <div class="bildSpelContent">
+        <p class="bildSpelText"> VÅRA <br> KLIMATMÅL </p>
+        <input type="button" class="bildSpelButton" value="Ta reda på mer ➝" onclick="onclick=window.location.href='index2.html';">
         <script type="text/javascript" src="script.js"></script>
-        <input type="image" src="arrowR.png" alt="error" class="arrow r" onclick="right()">
-        <input type="image" src="arrowL.png" alt="error" class="arrow l" onclick="left()">
+        <input type="image" src="img/arrowR.png" alt="högerpil" class="pil r" onclick="right()">
+        <input type="image" src="img/arrowL.png" alt="vänsterpil" class="pil l" onclick="left()">
         <script type="text/javascript" src="script.js"></script>
 
       </div>
@@ -44,21 +44,10 @@
     </div>
   </div>
 
+  <!--Länk för att ta användaren tillbaka till sidan-->
   <footer>
     <a href="#toppen" class="link" title="Toppen">Toppen av sidan ↑</a>
   </footer>
-
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
 
 </body>
 
